@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../search.dart';
+
 class Recommend extends StatelessWidget {
   String imageTrue = "images/Ellipse_true.png";
   String imageFalse = "images/Ellipse_false.png";
@@ -17,30 +19,49 @@ class Recommend extends StatelessWidget {
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 10),
                     height: 120,
                     width: double.infinity,
-                    child: Container(
-                        height: 40,
-                        margin: EdgeInsets.only(top: 60),
-                        child: Card(
-                          child: Container(
-                            height: 40,
-                            child: TextFormField(
-                              cursorColor: Colors.black,
-                              decoration: new InputDecoration(
-                                  border: InputBorder.none,
-                                  suffixIcon: Icon(
-                                    Icons.search,
-                                    color: Colors.black,
+                    child: InkWell(
+                      child: Container(
+                          height: 40,
+                          margin: EdgeInsets.only(top: 60),
+                          child: Card(
+                            child:Container(
+                              height: 40,
+                              margin: EdgeInsets.only(left: 20),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    margin: EdgeInsets.only(left: 10),
+                                    child: Text("Search"),
                                   ),
-                                  focusedBorder: InputBorder.none,
-                                  enabledBorder: InputBorder.none,
-                                  errorBorder: InputBorder.none,
-                                  disabledBorder: InputBorder.none,
-                                  contentPadding: EdgeInsets.only(
-                                      left: 15, bottom: 11, top: 11, right: 15),
-                                  hintText: "Search"),
+                                  Container(
+                                    margin: EdgeInsets.only(left: 250),
+                                    child: Icon(Icons.search),
+                                  ),
+                                ],
+                              ),
+                              // child: TextFormField(
+                              //   cursorColor: Colors.black,
+                              //   decoration: new InputDecoration(
+                              //       border: InputBorder.none,
+                              //       suffixIcon: Icon(
+                              //         Icons.search,
+                              //         color: Colors.black,
+                              //       ),
+                              //       focusedBorder: InputBorder.none,
+                              //       enabledBorder: InputBorder.none,
+                              //       errorBorder: InputBorder.none,
+                              //       disabledBorder: InputBorder.none,
+                              //       contentPadding: EdgeInsets.only(
+                              //           left: 15, bottom: 11, top: 11, right: 15),
+                              //       hintText: "Search"),
+                              // ),
                             ),
-                          ),
-                        ))),
+                          )
+                      ),
+                      onTap: (){
+                        Navigator.of(context).pushNamed(Search.tag);
+                      },
+                    )),
                 Container(
                   alignment: Alignment.bottomCenter,
                   padding: EdgeInsets.only(left: 10, right: 10),
