@@ -56,6 +56,15 @@ flutter:
       - images/videogame.png
       - images/movie_filter.png
       - images/audiotrack.png
+      - images/progress.png
+      - images/playvideo.png
+      - images/play.png
+      - images/opstion.png
+      - images/next.png
+      - images/back.png
+      - images/minimize.png
+      - images/account.png
+      - images/frame.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:psm/screen/detail.dart';
 import 'package:psm/screen/menu.dart';
 import 'package:psm/screen/search.dart';
 import 'package:psm/screen/speech.dart';
@@ -10,6 +11,7 @@ void main() {
     routes: {
       Search.tag: (context) => Search(),
       Speech.tag: (context) => Speech(),
+      Detail.tag: (context) => Detail(),
     },
   ));
 }

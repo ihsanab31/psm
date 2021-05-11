@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:psm/screen/detail.dart';
 import 'package:psm/screen/search.dart';
 
 class Home extends StatelessWidget {
@@ -71,35 +72,40 @@ class Home extends StatelessWidget {
                         children: [
                           Container(
                             width: double.infinity,
-                            child: Card(
-                              child: Container(
-                                child: Column(
-                                  children: [
-                                    Image.asset("images/image_one.png"),
-                                    Container(
-                                      margin: EdgeInsets.all(12),
-                                      child: Row(
-                                        children: [
-                                          new Flexible(
-                                            child: new Text(
-                                              "Disney Finding Doriy and Remote Control Toy Submarine                  ",
-                                              style: TextStyle(fontSize: 12),
+                            child: InkWell(
+                              child: Card(
+                                child: Container(
+                                  child: Column(
+                                    children: [
+                                      Image.asset("images/image_one.png"),
+                                      Container(
+                                        margin: EdgeInsets.all(12),
+                                        child: Row(
+                                          children: [
+                                            new Flexible(
+                                              child: new Text(
+                                                "Disney Finding Doriy and Remote Control Toy Submarine                  ",
+                                                style: TextStyle(fontSize: 12),
+                                              ),
+                                              flex: 15,
                                             ),
-                                            flex: 15,
-                                          ),
-                                          new Flexible(
-                                            child: new Container(
-                                              alignment: Alignment.center,
-                                              child: Icon(Icons.menu),
-                                            ),
-                                            flex: 1,
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
+                                            new Flexible(
+                                              child: new Container(
+                                                alignment: Alignment.center,
+                                                child: Icon(Icons.menu),
+                                              ),
+                                              flex: 1,
+                                            )
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
+                              onTap: (){
+                                Navigator.of(context).pushNamed(Detail.tag);
+                              },
                             ),
                           ),
                           Container(

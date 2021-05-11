@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class Recommend extends StatelessWidget {
   String imageTrue = "images/Ellipse_true.png";
   String imageFalse = "images/Ellipse_false.png";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,10 +18,10 @@ class Recommend extends StatelessWidget {
                     height: 120,
                     width: double.infinity,
                     child: Container(
-                      height: 40,
+                        height: 40,
                         margin: EdgeInsets.only(top: 60),
                         child: Card(
-                          child:Container(
+                          child: Container(
                             height: 40,
                             child: TextFormField(
                               cursorColor: Colors.black,
@@ -39,81 +40,121 @@ class Recommend extends StatelessWidget {
                                   hintText: "Search"),
                             ),
                           ),
-                        )
-                    )
-
-                ),
+                        ))),
                 Container(
                   alignment: Alignment.bottomCenter,
                   padding: EdgeInsets.only(left: 10, right: 10),
-                  height: 70,
+                  height: 90,
                   child: Row(
                     children: [
                       Container(
-                        margin: EdgeInsets.only(left: 40),
+                        margin: EdgeInsets.only(left: 40, top: 5),
                         alignment: Alignment.center,
-                        height: 60,
-                        width: 60,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage(imageTrue),
-                                fit: BoxFit.cover
+                        child: Column(
+                          children: [
+                            Container(
+                              alignment: Alignment.center,
+                              height: 60,
+                              width: 60,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                    image: AssetImage(imageTrue),
+                                    fit: BoxFit.cover),
+                              ),
+                              child: Image.asset("images/movie_filter.png"),
                             ),
+                            Container(
+                              margin: EdgeInsets.only(top: 5),
+                              child: Text("Shows", style: TextStyle(
+                                color: Colors.red
+                              ),),
+                            )
+                          ],
                         ),
-                        child: Image.asset("images/movie_filter.png"),
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 20),
+                        margin: EdgeInsets.only(left: 20, top: 5),
                         alignment: Alignment.center,
-                        height: 60,
-                        width: 60,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage(imageFalse),
-                                fit: BoxFit.cover
+                        child: Column(
+                          children: [
+                            Container(
+                              alignment: Alignment.center,
+                              height: 60,
+                              width: 60,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                    image: AssetImage(imageFalse),
+                                    fit: BoxFit.cover),
+                              ),
+                              child: Image.asset("images/audiotrack.png"),
                             ),
+                            Container(
+                              margin: EdgeInsets.only(top: 5),
+                              child: Text("Music", style: TextStyle(
+                                color: Colors.grey
+                              ),),
+                            )
+                          ],
                         ),
-                        child: Image.asset("images/audiotrack.png"),
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 20),
+                        margin: EdgeInsets.only(left: 20, top: 5),
                         alignment: Alignment.center,
-                        height: 60,
-                        width: 60,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage(imageFalse),
-                                fit: BoxFit.cover
+                        child: Column(
+                          children: [
+                            Container(
+                              alignment: Alignment.center,
+                              height: 60,
+                              width: 60,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                    image: AssetImage(imageFalse),
+                                    fit: BoxFit.cover),
+                              ),
+                              child: Image.asset("images/school.png"),
                             ),
+                            Container(
+                              margin: EdgeInsets.only(top: 5),
+                              child: Text("Learning", style: TextStyle(
+                                color: Colors.grey
+                              ),),
+                            )
+                          ],
                         ),
-                        child: Image.asset("images/school.png"),
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 20),
+                        margin: EdgeInsets.only(left: 20, top: 5),
                         alignment: Alignment.center,
-                        height: 60,
-                        width: 60,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage(imageFalse),
-                                fit: BoxFit.cover
+                        child: Column(
+                          children: [
+                            Container(
+                              alignment: Alignment.center,
+                              height: 60,
+                              width: 60,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                    image: AssetImage(imageFalse),
+                                    fit: BoxFit.cover),
+                              ),
+                              child: Image.asset("images/videogame.png"),
                             ),
+                            Container(
+                              margin: EdgeInsets.only(top: 5),
+                              child: Text("Games", style: TextStyle(
+                                color: Colors.grey
+                              ),),
+                            )
+                          ],
                         ),
-                        child: Image.asset("images/videogame.png"),
                       ),
+
                     ],
                   ),
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 30),
-                  width: MediaQuery
-                      .of(context)
-                      .size
-                      .width,
-                  height: MediaQuery
-                      .of(context)
-                      .size
-                      .height,
+                  width: MediaQuery.of(context).size.width,
+                  height: MediaQuery.of(context).size.height,
                   padding: EdgeInsets.only(bottom: 20),
                   child: ListView(
                     children: [
@@ -255,7 +296,6 @@ class Recommend extends StatelessWidget {
                 )
               ],
             ),
-
           ],
         ),
       ),
