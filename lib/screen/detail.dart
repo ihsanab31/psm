@@ -17,6 +17,7 @@ class _DetailState extends State<Detail> {
             children: [
               Container(
                 height: 293,
+                alignment: Alignment.center,
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage("images/playvideo.png"),
@@ -35,36 +36,40 @@ class _DetailState extends State<Detail> {
                           ),
                           Container(
                             margin: EdgeInsets.only(
-                                left: MediaQuery.of(context).size.height / 2.5),
+                                left: MediaQuery.of(context).size.width / 1.1),
                             alignment: Alignment.centerRight,
                             child: Image.asset("images/opstion.png"),
                           ),
                         ],
                       ),
                     ),
-                    Container(
-                      height: 200,
-                      width: double.infinity,
-                      alignment: Alignment.center,
-                      margin: EdgeInsets.only(
-                          left: MediaQuery.of(context).size.height / 8),
-                      child: Row(
-                        children: [
-                          Container(
-                            child: Image.asset("images/back.png"),
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(left: 50),
-                            alignment: Alignment.centerRight,
-                            child: Image.asset("images/play.png"),
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(left: 50),
-                            alignment: Alignment.centerRight,
-                            child: Image.asset("images/next.png"),
-                          ),
-                        ],
+                    Center(
+                      child:
+                      Container(
+                        height: 200,
+                        width: double.infinity,
+                        alignment: Alignment.center,
+                        margin: EdgeInsets.only(
+                            left: MediaQuery.of(context).size.width / 2.7),
+                        child: Row(
+                          children: [
+                            Container(
+                              child: Image.asset("images/back.png"),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(left: 50),
+                              alignment: Alignment.centerRight,
+                              child: Image.asset("images/play.png"),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(left: 50),
+                              alignment: Alignment.centerRight,
+                              child: Image.asset("images/next.png"),
+                            ),
+                          ],
+                        ),
                       ),
+
                     ),
                     Container(
                       width: double.infinity,

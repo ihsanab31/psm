@@ -5,6 +5,7 @@ import 'package:psm/screen/page/subcription.dart';
 
 class Menu extends StatefulWidget {
   static String tag = "/menu-page";
+
   _MenuState createState() => _MenuState();
 }
 
@@ -12,11 +13,9 @@ class _MenuState extends State<Menu> {
   int _selectedIndex = 0;
 
   static TextStyle optionStyle =
-  TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
-    Scaffold(
-        body: Home()
-    ),
+    Scaffold(body: Home()),
     Scaffold(
       body: Recommend(),
     ),
@@ -36,6 +35,7 @@ class _MenuState extends State<Menu> {
       _selectedIndex = index;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,15 +45,45 @@ class _MenuState extends State<Menu> {
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Container(
+              decoration: BoxDecoration(
+                image: _selectedIndex == 0
+                    ? DecorationImage(
+                  image: AssetImage("images/background.png"),
+                  fit: BoxFit.cover,
+                )
+                    : null,
+              ),
+              child: Icon(Icons.home),
+            ),
             title: Text('Home'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
+            icon: Container(
+              decoration: BoxDecoration(
+                image: _selectedIndex == 1
+                    ? DecorationImage(
+                        image: AssetImage("images/background.png"),
+                        fit: BoxFit.cover,
+                      )
+                    : null,
+              ),
+              child: Icon(Icons.favorite),
+            ),
             title: Text('Recommended'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.notifications_active),
+            icon: Container(
+              decoration: BoxDecoration(
+                image: _selectedIndex == 2
+                    ? DecorationImage(
+                        image: AssetImage("images/background.png"),
+                        fit: BoxFit.cover,
+                      )
+                    : null,
+              ),
+              child: Icon(Icons.notifications_active),
+            ),
             title: Text('Subscription'),
           ),
         ],
@@ -65,5 +95,4 @@ class _MenuState extends State<Menu> {
       ),
     );
   }
-
 }
