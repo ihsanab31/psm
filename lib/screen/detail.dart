@@ -78,7 +78,6 @@ class _DetailState extends State<Detail> {
                       child: Row(
                         children: [
                           Container(
-                            margin : EdgeInsets.only(top :5),
                             child: Image.asset("images/progress.png"),
                           ),
                           Container(
@@ -229,7 +228,7 @@ class _DetailState extends State<Detail> {
               ),
               Container(
                 width: double.infinity,
-                margin: EdgeInsets.only(bottom: 20),
+                margin: EdgeInsets.only(bottom: 150),
                 child: Card(
                   child: Container(
                     child: Column(
