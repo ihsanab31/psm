@@ -68,11 +68,10 @@ class Recommend extends StatelessWidget {
                 Container(
                   alignment: Alignment.bottomCenter,
                   padding: EdgeInsets.only(left: 10, right: 10),
-                  height: 90,
                   child: Row(
                     children: [
                       Container(
-                        margin: EdgeInsets.only(left: 40, top: 5),
+                        margin: EdgeInsets.only(left: 40, top: 15, bottom: 5),
                         alignment: Alignment.center,
                         child: Column(
                           children: [
@@ -88,7 +87,7 @@ class Recommend extends StatelessWidget {
                               child: Image.asset("images/movie_filter.png"),
                             ),
                             Container(
-                              margin: EdgeInsets.only(top: 5),
+                              margin: EdgeInsets.only(top: 15, bottom: 5),
                               child: Text(
                                 "Shows",
                                 style: TextStyle(color: Colors.red),
@@ -98,7 +97,7 @@ class Recommend extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 20, top: 5),
+                        margin: EdgeInsets.only(left: 20, top: 15, bottom: 5),
                         alignment: Alignment.center,
                         child: Column(
                           children: [
@@ -114,7 +113,7 @@ class Recommend extends StatelessWidget {
                               child: Image.asset("images/audiotrack.png"),
                             ),
                             Container(
-                              margin: EdgeInsets.only(top: 5),
+                              margin: EdgeInsets.only(top: 15, bottom: 5),
                               child: Text(
                                 "Music",
                                 style: TextStyle(color: Colors.grey),
@@ -124,7 +123,7 @@ class Recommend extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 20, top: 5),
+                        margin: EdgeInsets.only(left: 20, top: 15, bottom: 5),
                         alignment: Alignment.center,
                         child: Column(
                           children: [
@@ -140,7 +139,7 @@ class Recommend extends StatelessWidget {
                               child: Image.asset("images/school.png"),
                             ),
                             Container(
-                              margin: EdgeInsets.only(top: 5),
+                              margin: EdgeInsets.only(top: 15, bottom: 5),
                               child: Text(
                                 "Learning",
                                 style: TextStyle(color: Colors.grey),
@@ -150,7 +149,7 @@ class Recommend extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 20, top: 5),
+                        margin: EdgeInsets.only(left: 20, top: 15, bottom: 5),
                         alignment: Alignment.center,
                         child: Column(
                           children: [
@@ -166,7 +165,7 @@ class Recommend extends StatelessWidget {
                               child: Image.asset("images/videogame.png"),
                             ),
                             Container(
-                              margin: EdgeInsets.only(top: 5),
+                              margin: EdgeInsets.only(top: 15, bottom: 5),
                               child: Text(
                                 "Games",
                                 style: TextStyle(color: Colors.grey),
@@ -179,11 +178,11 @@ class Recommend extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: 30),
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height,
                   padding: EdgeInsets.only(bottom: 20),
                   child: ListView(
+                    padding: EdgeInsets.zero,
                     children: [
                       Container(
                         width: double.infinity,
