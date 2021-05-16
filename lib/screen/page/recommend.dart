@@ -24,14 +24,18 @@ class Recommend extends StatelessWidget {
                           height: 40,
                           margin: EdgeInsets.only(top: 60),
                           child: Card(
-                            child:Container(
+                            child: Container(
                               height: 40,
                               margin: EdgeInsets.only(left: 20),
                               child: Row(
                                 children: [
                                   Container(
                                     margin: EdgeInsets.only(left: 10),
-                                    child: Text("Search"),
+                                    child: Text(
+                                      "Search",
+                                      style: TextStyle(
+                                          color: Colors.grey, fontSize: 16),
+                                    ),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 250),
@@ -56,9 +60,8 @@ class Recommend extends StatelessWidget {
                               //       hintText: "Search"),
                               // ),
                             ),
-                          )
-                      ),
-                      onTap: (){
+                          )),
+                      onTap: () {
                         Navigator.of(context).pushNamed(Search.tag);
                       },
                     )),
@@ -86,9 +89,10 @@ class Recommend extends StatelessWidget {
                             ),
                             Container(
                               margin: EdgeInsets.only(top: 5),
-                              child: Text("Shows", style: TextStyle(
-                                color: Colors.red
-                              ),),
+                              child: Text(
+                                "Shows",
+                                style: TextStyle(color: Colors.red),
+                              ),
                             )
                           ],
                         ),
@@ -111,9 +115,10 @@ class Recommend extends StatelessWidget {
                             ),
                             Container(
                               margin: EdgeInsets.only(top: 5),
-                              child: Text("Music", style: TextStyle(
-                                color: Colors.grey
-                              ),),
+                              child: Text(
+                                "Music",
+                                style: TextStyle(color: Colors.grey),
+                              ),
                             )
                           ],
                         ),
@@ -136,9 +141,10 @@ class Recommend extends StatelessWidget {
                             ),
                             Container(
                               margin: EdgeInsets.only(top: 5),
-                              child: Text("Learning", style: TextStyle(
-                                color: Colors.grey
-                              ),),
+                              child: Text(
+                                "Learning",
+                                style: TextStyle(color: Colors.grey),
+                              ),
                             )
                           ],
                         ),
@@ -161,14 +167,14 @@ class Recommend extends StatelessWidget {
                             ),
                             Container(
                               margin: EdgeInsets.only(top: 5),
-                              child: Text("Games", style: TextStyle(
-                                color: Colors.grey
-                              ),),
+                              child: Text(
+                                "Games",
+                                style: TextStyle(color: Colors.grey),
+                              ),
                             )
                           ],
                         ),
                       ),
-
                     ],
                   ),
                 ),
@@ -193,14 +199,14 @@ class Recommend extends StatelessWidget {
                                       new Flexible(
                                         child: new Text(
                                           "Disney Finding Doriy and Remote Control Toy Submarine                  ",
-                                          style: TextStyle(fontSize: 12),
+                                          style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                                         ),
                                         flex: 15,
                                       ),
                                       new Flexible(
                                         child: new Container(
                                           alignment: Alignment.center,
-                                          child: Icon(Icons.menu),
+                                          child: Image.asset("images/opstion_menu.png"),
                                         ),
                                         flex: 1,
                                       )
@@ -226,14 +232,14 @@ class Recommend extends StatelessWidget {
                                       new Flexible(
                                         child: new Text(
                                           "SUPER TOY HAUL! Toy Fair SURPRISE BOX From Ourselves by Evan TubeHD",
-                                          style: TextStyle(fontSize: 12),
+                                          style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                                         ),
                                         flex: 15,
                                       ),
                                       new Flexible(
                                         child: new Container(
                                           alignment: Alignment.center,
-                                          child: Icon(Icons.menu),
+                                          child: Image.asset("images/opstion_menu.png"),
                                         ),
                                         flex: 1,
                                       )
@@ -259,14 +265,14 @@ class Recommend extends StatelessWidget {
                                       new Flexible(
                                         child: new Text(
                                           "Disney Finding Doriy and Remote Control Toy Submarine                  ",
-                                          style: TextStyle(fontSize: 12),
+                                          style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                                         ),
                                         flex: 15,
                                       ),
                                       new Flexible(
                                         child: new Container(
                                           alignment: Alignment.center,
-                                          child: Icon(Icons.menu),
+                                          child: Image.asset("images/opstion_menu.png"),
                                         ),
                                         flex: 1,
                                       )
@@ -279,7 +285,7 @@ class Recommend extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.only(bottom: 260),
+                        padding: EdgeInsets.only(bottom: 330),
                         width: double.infinity,
                         child: Card(
                           child: Container(
@@ -293,14 +299,14 @@ class Recommend extends StatelessWidget {
                                       new Flexible(
                                         child: new Text(
                                           "SUPER TOY HAUL! Toy Fair SURPRISE BOX From Ourselves by Evan TubeHD",
-                                          style: TextStyle(fontSize: 12),
+                                          style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                                         ),
                                         flex: 15,
                                       ),
                                       new Flexible(
                                         child: new Container(
                                           alignment: Alignment.center,
-                                          child: Icon(Icons.menu),
+                                          child: Image.asset("images/opstion_menu.png"),
                                         ),
                                         flex: 1,
                                       )

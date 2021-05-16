@@ -71,6 +71,7 @@ flutter:
       - images/background.png
       - images/indikator.png
       - images/progress_play.png
+      - images/opstion_menu.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

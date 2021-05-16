@@ -46,7 +46,7 @@ class _DetailState extends State<Detail> {
                     Center(
                       child:
                       Container(
-                        height: 200,
+                        height: 190,
                         width: double.infinity,
                         alignment: Alignment.center,
                         margin: EdgeInsets.only(
@@ -73,6 +73,7 @@ class _DetailState extends State<Detail> {
                     ),
                     Container(
                       width: double.infinity,
+                      padding: EdgeInsets.only(left: 5),
                       margin: EdgeInsets.only(
                           top: MediaQuery.of(context).size.width / 9),
                       child: Row(

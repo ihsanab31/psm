@@ -30,7 +30,7 @@ class Subcription extends StatelessWidget{
                                 children: [
                                   Container(
                                     margin: EdgeInsets.only(left: 10),
-                                    child: Text("Search"),
+                                    child: Text("Search", style: TextStyle(color: Colors.grey, fontSize: 16),),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 250),
@@ -91,14 +91,14 @@ class Subcription extends StatelessWidget{
                                           new Flexible(
                                             child: new Text(
                                               "Disney Finding Doriy and Remote Control Toy Submarine                  ",
-                                              style: TextStyle(fontSize: 12),
+                                              style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                                             ),
                                             flex: 15,
                                           ),
                                           new Flexible(
                                             child: new Container(
                                               alignment: Alignment.center,
-                                              child: Icon(Icons.menu),
+                                              child: Image.asset("images/opstion_menu.png"),
                                             ),
                                             flex: 1,
                                           )
@@ -124,14 +124,14 @@ class Subcription extends StatelessWidget{
                                           new Flexible(
                                             child: new Text(
                                               "SUPER TOY HAUL! Toy Fair SURPRISE BOX From Ourselves by Evan TubeHD",
-                                              style: TextStyle(fontSize: 12),
+                                              style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                                             ),
                                             flex: 15,
                                           ),
                                           new Flexible(
                                             child: new Container(
                                               alignment: Alignment.center,
-                                              child: Icon(Icons.menu),
+                                              child: Image.asset("images/opstion_menu.png"),
                                             ),
                                             flex: 1,
                                           )
@@ -157,14 +157,14 @@ class Subcription extends StatelessWidget{
                                           new Flexible(
                                             child: new Text(
                                               "Disney Finding Doriy and Remote Control Toy Submarine                  ",
-                                              style: TextStyle(fontSize: 12),
+                                              style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                                             ),
                                             flex: 15,
                                           ),
                                           new Flexible(
                                             child: new Container(
                                               alignment: Alignment.center,
-                                              child: Icon(Icons.menu),
+                                              child: Image.asset("images/opstion_menu.png"),
                                             ),
                                             flex: 1,
                                           )
@@ -191,14 +191,14 @@ class Subcription extends StatelessWidget{
                                           new Flexible(
                                             child: new Text(
                                               "SUPER TOY HAUL! Toy Fair SURPRISE BOX From Ourselves by Evan TubeHD",
-                                              style: TextStyle(fontSize: 12),
+                                              style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                                             ),
                                             flex: 15,
                                           ),
                                           new Flexible(
                                             child: new Container(
                                               alignment: Alignment.center,
-                                              child: Icon(Icons.menu),
+                                              child: Image.asset("images/opstion_menu.png"),
                                             ),
                                             flex: 1,
                                           )
